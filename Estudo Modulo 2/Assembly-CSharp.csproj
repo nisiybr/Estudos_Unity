@@ -57,6 +57,7 @@
      <Compile Include="Assets\Scripts\CollisionEnemyController.cs" />
      <Compile Include="Assets\Scripts\Dinosaur1Controller.cs" />
      <Compile Include="Assets\Scripts\HammerController.cs" />
+     <Compile Include="Assets\Scripts\IABasica.cs" />
      <Compile Include="Assets\Scripts\moveOffSet.cs" />
      <Compile Include="Assets\Scripts\PlataformaController.cs" />
      <Compile Include="Assets\Scripts\PlataformaGiratoriaController.cs" />

@@ -17,8 +17,7 @@ public class playerController : MonoBehaviour {
 	public		bool 			isSwimming;
 	public		bool 			isSubmerso;
 	public 		Transform 		maoPersonagem;
-	public		bool 			haveHammer;
-	public		bool 			haveBalls;
+
 	public		bool 			isLoadingHeadHit;
 	public		bool 			isAbleToThrow;
 	public		bool 			isAbleToHit;
@@ -51,6 +50,13 @@ public class playerController : MonoBehaviour {
 
 	[Header("PREFAB TIRO")]
 	public		GameObject 		ballPrefab;
+
+
+	[Header("POWER UPS")]
+	public		bool 			haveHammer;
+	public		bool 			haveBalls;
+	public 		bool			haveCloak;
+
 
 
 
@@ -166,7 +172,7 @@ public class playerController : MonoBehaviour {
 	}
 	void voar()
 	{
-		if(Input.GetButtonDown("Jump") && !isGrounded && isAbleToFly){
+		if(Input.GetButtonDown("Jump") && !isGrounded && isAbleToFly && haveCloak){
 			isFlying = true;
 			rbPlayer.gravityScale = gravityFlying;
 			rbPlayer.velocity = new Vector2 (rbPlayer.velocity.x, 0.1f);
