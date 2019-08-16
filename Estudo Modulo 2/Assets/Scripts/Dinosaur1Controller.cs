@@ -9,25 +9,31 @@ public class Dinosaur1Controller : MonoBehaviour {
 	private 	playerController	_PC;
 	private 	bool				canTakeHit;
 
-	[Header("STATS PLAYER")]
+	[Header("STATS ENEMY")]
 	public		float 			HP;
 	public		float 			defesa;
+	public 		bool 			olhandoDireita;
 	private Rigidbody2D rbDinosaur1;
 	public float Dinosaur1velocity;
-	public float Dinosaur1TimeToTurn;
 	public GameObject prefabEffectMorte;
 
 	// Use this for initialization
 	void Start () {
 		rbDinosaur1 = GetComponent<Rigidbody2D> ();
-		StartCoroutine ("AIMovement");
 		canTakeHit = true;
 	}
 	
-	/*// Update is called once per frame
+	// Update is called once per frame
 	void Update () {
-		
-	}*/
+		if (rbDinosaur1.velocity.x < 0 && olhandoDireita) {
+			flip ();
+			olhandoDireita = false;
+		}	
+		if (rbDinosaur1.velocity.x > 0 && !olhandoDireita) {
+			flip ();
+			olhandoDireita = true;
+		}
+	}
 
 	void OnTriggerEnter2D(Collider2D col)
 	{
@@ -73,16 +79,8 @@ public class Dinosaur1Controller : MonoBehaviour {
 	}
 	void morrer()
 	{
-		StopCoroutine ("AIMovement");
 		Instantiate (prefabEffectMorte,transform.localPosition,transform.localRotation);
 		Destroy (this.gameObject);
-	}
-	IEnumerator AIMovement(){
-		rbDinosaur1.velocity = new Vector2 (Dinosaur1velocity, rbDinosaur1.velocity.y);
-		yield return new WaitForSeconds (Dinosaur1TimeToTurn);
-		Dinosaur1velocity *= -1;
-		flip ();
-		StartCoroutine ("AIMovement");
 	}
 	IEnumerator ControlCanTakeHit(){
 		yield return new WaitForEndOfFrame ();
