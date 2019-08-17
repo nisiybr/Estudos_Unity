@@ -58,6 +58,8 @@
      <Compile Include="Assets\Scripts\Dinosaur1Controller.cs" />
      <Compile Include="Assets\Scripts\HammerController.cs" />
      <Compile Include="Assets\Scripts\IABasica.cs" />
+     <Compile Include="Assets\Scripts\itemLojaController.cs" />
+     <Compile Include="Assets\Scripts\lojaController.cs" />
      <Compile Include="Assets\Scripts\moveOffSet.cs" />
      <Compile Include="Assets\Scripts\PlataformaController.cs" />
      <Compile Include="Assets\Scripts\PlataformaGiratoriaController.cs" />

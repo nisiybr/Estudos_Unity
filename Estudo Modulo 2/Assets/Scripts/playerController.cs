@@ -244,6 +244,22 @@ public class playerController : MonoBehaviour {
 		rbPlayer.constraints = RigidbodyConstraints2D.FreezeRotation;
 	}
 
+	public void atualizarItens(int idItem){
+		switch(idItem)
+		{
+			case 0://hammer
+			haveHammer = true;
+			break;
+			case 1://bolinha
+			haveBalls = true;
+			break;
+			case 2://capa
+			haveCloak = true;
+			break;
+		}
+			
+	}
+
 
 
 	//------------------------------------------------------------------
@@ -292,7 +308,13 @@ public class playerController : MonoBehaviour {
 				rbPlayer.gravityScale = gravitySwimming;
 				break;
 			}
+		case "itemLoja":
+			{
+				col.SendMessage("abrirLoja", 0 , SendMessageOptions.DontRequireReceiver);
+				break;
+			}
 		}
+
 	}
 
 	void OnTriggerExit2D(Collider2D col)
