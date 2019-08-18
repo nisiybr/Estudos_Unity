@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class playerController : MonoBehaviour {
 
+	private gameController _GC;
+	
 	[Header("VARIABLES PLAYER")]
 	public 		bool 			isFaceToRight;
 	public 		float 			horizontal;
@@ -24,7 +26,7 @@ public class playerController : MonoBehaviour {
 	public		bool 			isAbleToFly;
 
 	[Header("STATS PLAYER")]
-	public		float 			HP;
+	public 		int 			HP;
 	public		float 			defesa;
 	public		float 			ataqueBase;
 	public		float 			forcaPulo;
@@ -64,6 +66,8 @@ public class playerController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		_GC = FindObjectOfType(typeof(gameController)) as gameController;
+
 		rbPlayer = GetComponent<Rigidbody2D> ();
 		animPlayer = GetComponent<Animator> ();
 
@@ -259,6 +263,22 @@ public class playerController : MonoBehaviour {
 		}
 			
 	}
+	public void trataColetavel(int c){
+		switch(c)
+		{
+			case 0: 
+			case 1: 
+			case 2: 
+				atualizarItens(c); //ativa hammer bolinha ou cloak
+			break;			
+			case 998: //Ring Normal
+				_GC.coletarRings(1,10);
+			break;
+			case 999: //Ring Plus
+				_GC.coletarRings(5,100);
+			break;
+		}
+	}
 
 
 
@@ -311,6 +331,17 @@ public class playerController : MonoBehaviour {
 		case "itemLoja":
 			{
 				col.SendMessage("abrirLoja", 0 , SendMessageOptions.DontRequireReceiver);
+				break;
+			}
+		case "coletavel":
+			{
+				col.SendMessage("coletavel", 0 , SendMessageOptions.DontRequireReceiver);
+				break;
+			}
+		case "coletavelG":
+			{
+				trataColetavel(col.GetComponent<coletavelController>().idColetavel);
+				Destroy(col.gameObject);				
 				break;
 			}
 		}

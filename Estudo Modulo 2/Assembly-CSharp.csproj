@@ -54,8 +54,10 @@
      <Compile Include="Assets\Scripts\ballController.cs" />
      <Compile Include="Assets\Scripts\BecameInvisible.cs" />
      <Compile Include="Assets\Scripts\CameraController.cs" />
+     <Compile Include="Assets\Scripts\coletavelController.cs" />
      <Compile Include="Assets\Scripts\CollisionEnemyController.cs" />
      <Compile Include="Assets\Scripts\Dinosaur1Controller.cs" />
+     <Compile Include="Assets\Scripts\gameController.cs" />
      <Compile Include="Assets\Scripts\HammerController.cs" />
      <Compile Include="Assets\Scripts\IABasica.cs" />
      <Compile Include="Assets\Scripts\itemLojaController.cs" />
@@ -64,6 +66,7 @@
      <Compile Include="Assets\Scripts\PlataformaController.cs" />
      <Compile Include="Assets\Scripts\PlataformaGiratoriaController.cs" />
      <Compile Include="Assets\Scripts\playerController.cs" />
+     <Compile Include="Assets\Scripts\rings.cs" />
  <Reference Include="UnityEngine.CoreModule">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
  </Reference>
