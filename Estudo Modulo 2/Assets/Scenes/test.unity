@@ -525,7 +525,7 @@ GameObject:
   - component: {fileID: 324400127}
   - component: {fileID: 324400126}
   - component: {fileID: 324400128}
-  m_Layer: 15
+  m_Layer: 0
   m_Name: imgRings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3304,6 +3304,60 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &402664134
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 402664135}
+  - component: {fileID: 402664136}
+  m_Layer: 15
+  m_Name: FootHitBox
+  m_TagString: hitCollision
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &402664135
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 402664134}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1599766154}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &402664136
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 402664134}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.13269234, y: -0.562619}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.3527727, y: 0.047286034}
+  m_EdgeRadius: 0
 --- !u!1 &433273384
 GameObject:
   m_ObjectHideFlags: 0
@@ -3315,7 +3369,7 @@ GameObject:
   - component: {fileID: 433273387}
   - component: {fileID: 433273386}
   - component: {fileID: 433273388}
-  m_Layer: 15
+  m_Layer: 0
   m_Name: imgLifes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3397,7 +3451,7 @@ GameObject:
   - component: {fileID: 445048026}
   - component: {fileID: 445048028}
   - component: {fileID: 445048027}
-  m_Layer: 15
+  m_Layer: 0
   m_Name: RightPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3793,7 +3847,7 @@ GameObject:
   - component: {fileID: 799391718}
   - component: {fileID: 799391717}
   - component: {fileID: 799391716}
-  m_Layer: 15
+  m_Layer: 0
   m_Name: txtRings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4694,7 +4748,7 @@ GameObject:
   - component: {fileID: 845331962}
   - component: {fileID: 845331965}
   - component: {fileID: 845331964}
-  m_Layer: 15
+  m_Layer: 0
   m_Name: txtLives
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5191,18 +5245,17 @@ GameObject:
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 50364971555802572, guid: e84510074abf77c40953fe16beb23d0f,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1099827624}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 10
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -5224,6 +5277,7 @@ MonoBehaviour:
   - {fileID: 2074781342}
   - {fileID: 701697676}
   velocidadeIA: 1
+  olhandoDireita: 1
 --- !u!95 &1099827627
 Animator:
   serializedVersion: 3
@@ -5301,7 +5355,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HP: 100
   defesa: 10
-  olhandoDireita: 1
   Dinosaur1velocity: 2
   prefabEffectMorte: {fileID: 1234413283594896, guid: 3ba88ab2dd57ee14abc5dc6cfb19bb2f,
     type: 2}
@@ -5462,7 +5515,7 @@ GameObject:
   - component: {fileID: 1236230546}
   - component: {fileID: 1236230548}
   - component: {fileID: 1236230547}
-  m_Layer: 15
+  m_Layer: 0
   m_Name: LeftPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5561,7 +5614,7 @@ GameObject:
   - component: {fileID: 1472850529}
   - component: {fileID: 1472850528}
   - component: {fileID: 1472850527}
-  m_Layer: 15
+  m_Layer: 0
   m_Name: HUD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5809,7 +5862,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1599766151}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.36, y: -2.6809998, z: 0}
+  m_LocalPosition: {x: 7.597, y: 2.628, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 347627806}
@@ -5817,6 +5870,7 @@ Transform:
   - {fileID: 2082051598}
   - {fileID: 251182449}
   - {fileID: 1213912023}
+  - {fileID: 402664135}
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5856,6 +5910,7 @@ MonoBehaviour:
   vertical: 0
   groundCheckL: {fileID: 1610298755}
   groundCheckR: {fileID: 2082051598}
+  rbPlayer: {fileID: 0}
   isGrounded: 0
   isFlying: 0
   isSwimming: 0
@@ -5870,7 +5925,7 @@ MonoBehaviour:
   ataqueBase: 10
   forcaPulo: 800
   forcaPuloNado: 400
-  velocityPlayer: 2.4
+  velocityPlayer: 2
   velocityPlayerSubmerso: 1
   velocityPlayerMultiplier: 0.5
   forcaArremeso: 800
@@ -6272,7 +6327,7 @@ GameObject:
   - component: {fileID: 1900871008}
   - component: {fileID: 1900871010}
   - component: {fileID: 1900871009}
-  m_Layer: 15
+  m_Layer: 0
   m_Name: txtKitten
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6390,7 +6445,7 @@ GameObject:
   - component: {fileID: 2013159637}
   - component: {fileID: 2013159636}
   - component: {fileID: 2013159635}
-  m_Layer: 15
+  m_Layer: 0
   m_Name: txtScore
   m_TagString: Untagged
   m_Icon: {fileID: 0}

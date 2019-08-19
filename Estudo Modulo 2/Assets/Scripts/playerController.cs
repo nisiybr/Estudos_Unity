@@ -12,7 +12,7 @@ public class playerController : MonoBehaviour {
 	public 		float 			vertical;
 	public		Transform 		groundCheckL;
 	public		Transform 		groundCheckR;
-	private 	Rigidbody2D 	rbPlayer;
+	public	 	Rigidbody2D 	rbPlayer;
 	private 	Animator		animPlayer;
 	public 		bool 			isGrounded;
 	public		bool 			isFlying;
