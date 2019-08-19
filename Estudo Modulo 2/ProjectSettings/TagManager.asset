@@ -12,6 +12,7 @@ TagManager:
   - headHit
   - itemLoja
   - coletavelG
+  - hitCollision
   layers:
   - Default
   - TransparentFX
@@ -28,7 +29,7 @@ TagManager:
   - hammerHit
   - enemyCollider
   - headHit
-  - 
+  - hitCollision
   - 
   - 
   - 

@@ -6,6 +6,7 @@ public class IABasica : MonoBehaviour {
 
 	public Transform[] 	positions;
 	public float velocidadeIA;
+	public 		bool 			olhandoDireita;
 
 
 
@@ -29,5 +30,20 @@ public class IABasica : MonoBehaviour {
 				
 		}
 
+		if (transform.position.x > positions[indexNextPosition].position.x && olhandoDireita) {
+			flip ();
+		 	olhandoDireita = false;
+		}	
+		if (transform.position.x < positions[indexNextPosition].position.x && !olhandoDireita) {
+		 	flip ();
+		 	olhandoDireita = true;
+		}
+	}
+	void flip()
+	{
+		Vector3 myScale;
+		myScale = this.transform.localScale;
+		myScale.x *= -1;
+		this.transform.localScale = myScale;
 	}
 }

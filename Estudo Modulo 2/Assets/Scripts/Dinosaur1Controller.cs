@@ -11,8 +11,7 @@ public class Dinosaur1Controller : MonoBehaviour {
 
 	[Header("STATS ENEMY")]
 	public		float 			HP;
-	public		float 			defesa;
-	public 		bool 			olhandoDireita;
+	public		float 			defesa;	
 	private Rigidbody2D rbDinosaur1;
 	public float Dinosaur1velocity;
 	public GameObject prefabEffectMorte;
@@ -25,20 +24,19 @@ public class Dinosaur1Controller : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (rbDinosaur1.velocity.x < 0 && olhandoDireita) {
-			flip ();
-			olhandoDireita = false;
-		}	
-		if (rbDinosaur1.velocity.x > 0 && !olhandoDireita) {
-			flip ();
-			olhandoDireita = true;
-		}
+
 	}
 
 	void OnTriggerEnter2D(Collider2D col)
 	{
 		switch (col.tag) 
 		{
+		case "hitCollision":
+			print ("Enemy1: Pé na Cabeça");
+			_PC = FindObjectOfType (typeof(playerController)) as playerController;
+			takeHit (_PC.ataqueBase, col);	
+
+			break;
 		case "projetilPlayer":
 			print ("Enemy1: Bolinha");
 			_BC = FindObjectOfType (typeof(ballController)) as ballController;
@@ -60,6 +58,24 @@ public class Dinosaur1Controller : MonoBehaviour {
 				rbDinosaur1.AddForce (new Vector2 (-130f, -100f));
 			}
 			break;
+		}
+	}
+	void takeHit(float damage, Collider2D col)
+	{
+		if (canTakeHit) {
+			canTakeHit	=	false;
+			Rigidbody2D rb = col.gameObject.GetComponentInParent<Rigidbody2D>(); 
+			rb.velocity = new Vector2(rb.velocity.x,0f);
+			rb.AddForce (new Vector2 (0f, 500f));
+			Instantiate (prefabEffectMorte, transform.localPosition, transform.localRotation);
+			if (HP - damage > 0) {
+				print ("Enemy1: " + HP + "-" + damage + "=" + (HP - damage));
+				HP -= damage;
+			} else {
+				morrer ();
+			}
+			print ("Enemy1: HP Atual: " + HP);
+			StartCoroutine ("ControlCanTakeHit");
 		}
 	}
 	void takeHit(float damage)
@@ -87,11 +103,5 @@ public class Dinosaur1Controller : MonoBehaviour {
 		print("Coroutina ControlCanTakeHit: True");
 		canTakeHit = true;
 	}
-	void flip()
-	{
-		Vector3 myScale;
-		myScale = this.transform.localScale;
-		myScale.x *= -1;
-		this.transform.localScale = myScale;
-	}
+
 }
