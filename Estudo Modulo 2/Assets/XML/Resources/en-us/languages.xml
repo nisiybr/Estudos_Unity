@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language>
+    <interface name="interface_titulo">
+        <textos>
+            <txt>Press Enter do Start or ESC to Options</txt>
+        </textos>
+    </interface>
+    <interface name="interface_loja">
+        <textos>
+            <txt>Hammer</txt>
+            <txt>Cloak</txt>
+            <txt>Helmet</txt>
+        </textos>
+    </interface>
+</language>
