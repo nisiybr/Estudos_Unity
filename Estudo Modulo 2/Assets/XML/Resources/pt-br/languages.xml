@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language>
+    <interface name="interface_titulo">
+        <textos>
+            <txt>Pressione ENTER começar ou ESC para Opções</txt>
+        </textos>
+    </interface>
+    <interface name="interface_loja">
+        <textos>
+            <txt>Martelo</txt>
+            <txt>Capa</txt>
+            <txt>Capacete</txt>
+        </textos>
+    </interface>
+</language>

@@ -67,6 +67,10 @@
      <Compile Include="Assets\Scripts\PlataformaGiratoriaController.cs" />
      <Compile Include="Assets\Scripts\playerController.cs" />
      <Compile Include="Assets\Scripts\rings.cs" />
+     <Compile Include="Assets\Scripts\titleController.cs" />
+     <Compile Include="Assets\XML\loadXMLFile.cs" />
+     <None Include="Assets\XML\Resources\en-us\languages.xml" />
+     <None Include="Assets\XML\Resources\pt-br\languages.xml" />
  <Reference Include="UnityEngine.CoreModule">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
  </Reference>
