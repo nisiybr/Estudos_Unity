@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
 
+	public Transform mainCamera;
+	private bool isDoor;
 	private Rigidbody2D rbPlayer;
 	private SpriteRenderer srPlayer;
 	private Animator animPlayer;
@@ -16,8 +18,13 @@ public class PlayerController : MonoBehaviour {
 	public float playerVelocity;
 	public bool isLookingRight;
 
+	public Transform Raypoint;
+
+	public LayerMask interacao;
+
 	// Use this for initialization
 	void Start () {
+		mainCamera = Camera.main.transform;
 		rbPlayer = GetComponent<Rigidbody2D>();
 		srPlayer = GetComponent<SpriteRenderer>();
 		animPlayer = GetComponent<Animator>();
@@ -28,11 +35,15 @@ public class PlayerController : MonoBehaviour {
 		movimentar();
 		atacar();
 		atualizarAnimator();
+		testaColisaoRaycast();
 		
 	}
 	void movimentar(){
 		horizontal = Input.GetAxisRaw("Horizontal");
 		vertical = Input.GetAxisRaw("Vertical");
+ 
+		Debug.DrawRay(Raypoint.position, new Vector2(horizontal,vertical) * 0.11f, Color.red);
+
 
 		rbPlayer.velocity = new Vector2(horizontal*playerVelocity,vertical*playerVelocity);
 	}
@@ -89,5 +100,24 @@ public class PlayerController : MonoBehaviour {
 			animPlayer.SetLayerWeight(2,1);
 			srPlayer.flipX = false;
 		}		
+	}
+	void testaColisaoRaycast()
+	{
+		RaycastHit2D hit = Physics2D.Raycast(Raypoint.position, new Vector2(horizontal,vertical),0.11f, interacao);
+		if(hit && !isDoor)
+		{
+			isDoor = true; 
+
+			doorController temp = hit.transform.gameObject.GetComponent<doorController>();
+
+			teleport(temp.saida,temp.posicaoCamera);
+
+		}
+	}
+	void teleport(Transform posPlayer, Transform posCamera)
+	{
+		transform.position = posPlayer.position;
+		mainCamera.position = new Vector3(posCamera.position.x,posCamera.position.y,-10);
+		isDoor = false;
 	}
 }
