@@ -6,5 +6,6 @@ public class doorController : MonoBehaviour {
 
 	public Transform saida;
 	public Transform posicaoCamera;
+	public int idSala;
 
 }
