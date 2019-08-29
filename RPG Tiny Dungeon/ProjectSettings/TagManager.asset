@@ -44,3 +44,6 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: minimapa
+    uniqueID: 1621660657
+    locked: 0

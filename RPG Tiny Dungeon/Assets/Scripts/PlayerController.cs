@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
 
-	public Transform mainCamera;
-	private bool isDoor;
+	
+	private transitionController _TC;
+	
+	//public bool isDoor;
 	private Rigidbody2D rbPlayer;
 	private SpriteRenderer srPlayer;
 	private Animator animPlayer;
@@ -24,7 +26,9 @@ public class PlayerController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		mainCamera = Camera.main.transform;
+		
+		_TC = FindObjectOfType(typeof(transitionController)) as transitionController;
+		
 		rbPlayer = GetComponent<Rigidbody2D>();
 		srPlayer = GetComponent<SpriteRenderer>();
 		animPlayer = GetComponent<Animator>();
@@ -104,20 +108,14 @@ public class PlayerController : MonoBehaviour {
 	void testaColisaoRaycast()
 	{
 		RaycastHit2D hit = Physics2D.Raycast(Raypoint.position, new Vector2(horizontal,vertical),0.11f, interacao);
-		if(hit && !isDoor)
+		if(hit && !_TC.isDoor)
 		{
-			isDoor = true; 
+			_TC.isDoor = true; 
 
 			doorController temp = hit.transform.gameObject.GetComponent<doorController>();
-
-			teleport(temp.saida,temp.posicaoCamera);
+			_TC.startFade(temp);
+			
 
 		}
-	}
-	void teleport(Transform posPlayer, Transform posCamera)
-	{
-		transform.position = posPlayer.position;
-		mainCamera.position = new Vector3(posCamera.position.x,posCamera.position.y,-10);
-		isDoor = false;
 	}
 }
