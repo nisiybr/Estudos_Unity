@@ -24,9 +24,15 @@ public class PlayerController : MonoBehaviour {
 
 	public LayerMask interacao;
 
+	public GameObject slashFrontPrefab;
+	public GameObject slashBackPrefab;
+	public GameObject slashRightPrefab;
+	public GameObject slashLeftPrefab;
+	public int idDirecao; //0 - front, 1 - back, 2 - sides
+
 	// Use this for initialization
 	void Start () {
-		
+		idDirecao = 0; // Player começa olhando para baixo
 		_TC = FindObjectOfType(typeof(transitionController)) as transitionController;
 		
 		rbPlayer = GetComponent<Rigidbody2D>();
@@ -56,6 +62,31 @@ public class PlayerController : MonoBehaviour {
 			isAttacking = true;
 		}
 	}
+	public void slash()
+	{
+		GameObject slashPrefab = null;
+		switch(idDirecao)
+		{
+			case 0:
+				slashPrefab = slashFrontPrefab;
+			break;
+			case 1:
+				slashPrefab = slashBackPrefab;
+			break;
+			case 2:
+				if(isLookingRight)
+				{
+					slashPrefab = slashRightPrefab;
+				}
+				else 
+				{
+					slashPrefab = slashLeftPrefab;
+				}
+			break;
+		}
+		GameObject temp = Instantiate(slashPrefab,transform.position,transform.localRotation);
+		Destroy(temp, 0.5f);
+	}
 	void atualizarAnimator(){
 		//controle animacao do walk
 		if(horizontal != 0 || vertical != 0 )
@@ -78,28 +109,30 @@ public class PlayerController : MonoBehaviour {
 		
 		if (vertical > 0)
 		{
-			
+			idDirecao = 1;
 			animPlayer.SetLayerWeight(1,1);
 			animPlayer.SetLayerWeight(2,0);
 			srPlayer.flipX = false;
 		}
 		if (vertical < 0)
 		{
-			
+			idDirecao = 0;
 			animPlayer.SetLayerWeight(1,0);
 			animPlayer.SetLayerWeight(2,0);
 			srPlayer.flipX = false;
 		}		
 		if (horizontal < 0)
 		{
-
+			idDirecao = 2;
+			isLookingRight = false;
 			animPlayer.SetLayerWeight(1,0);
 			animPlayer.SetLayerWeight(2,1);
 			srPlayer.flipX = true;
 		}		
 		if (horizontal > 0)
 		{
-			
+			idDirecao = 2;
+			isLookingRight = true ;
 			animPlayer.SetLayerWeight(1,0);
 			animPlayer.SetLayerWeight(2,1);
 			srPlayer.flipX = false;
