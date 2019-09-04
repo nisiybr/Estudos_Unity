@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 114289283197043672}
   - component: {fileID: 50759624799309748}
   - component: {fileID: 58434054816752970}
+  - component: {fileID: 58990982918702410}
   m_Layer: 0
   m_Name: Slime
   m_TagString: Untagged
@@ -95,6 +96,21 @@ CircleCollider2D:
   m_Offset: {x: 0, y: -0.009088159}
   serializedVersion: 2
   m_Radius: 0.053188443
+--- !u!58 &58990982918702410
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1975610887048710}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.009088159}
+  serializedVersion: 2
+  m_Radius: 0.053188443
 --- !u!95 &95068853852563536
 Animator:
   serializedVersion: 3
@@ -127,9 +143,17 @@ MonoBehaviour:
     type: 2}
   velocidadeMovimento: 0.1
   tempoMinMovimento: 2
-  tempoMinEspera: 0
+  tempoMinEspera: 1
   tempoMaxMovimento: 4
   tempoMaxEspera: 3
+  mascaraPlayer:
+    serializedVersion: 2
+    m_Bits: 256
+  isPlayerLock: 0
+  chavePararMovimento: 0
+  areaPercepcao: 0.8
+  pursuitColor: {r: 1, g: 0, b: 0, a: 0.506}
+  originalColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &212352050885874110
 SpriteRenderer:
   m_ObjectHideFlags: 1
