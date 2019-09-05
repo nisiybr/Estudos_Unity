@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class PlayerController : MonoBehaviour {
 
@@ -29,6 +30,10 @@ public class PlayerController : MonoBehaviour {
 	public GameObject slashRightPrefab;
 	public GameObject slashLeftPrefab;
 	public int idDirecao; //0 - front, 1 - back, 2 - sides
+
+
+	public List<int> doorKeys = new List<int>();
+	//public int[] doorKeys;
 
 	// Use this for initialization
 	void Start () {
@@ -138,17 +143,54 @@ public class PlayerController : MonoBehaviour {
 			srPlayer.flipX = false;
 		}		
 	}
+	private void OnTriggerEnter2D(Collider2D col) {
+		switch(col.tag)
+		{
+			case "colectable":
+				if(col.gameObject.GetComponent<ColectableController>().type == "key")
+				{
+					doorKeys.Add(col.gameObject.GetComponent<ColectableController>().idKey);
+				}
+				Destroy(col.gameObject);
+			break;
+		}
+	}
 	void testaColisaoRaycast()
 	{
 		RaycastHit2D hit = Physics2D.Raycast(Raypoint.position, new Vector2(horizontal,vertical),0.11f, interacao);
 		if(hit && !_TC.isDoor)
 		{
-			_TC.isDoor = true; 
-
 			doorController temp = hit.transform.gameObject.GetComponent<doorController>();
-			_TC.startFade(temp);
-			
 
+			if(!temp.doorLocked)
+			{
+				_TC.isDoor = true;
+				temp.doorClosed = false;
+				temp.atualizaSprite();  
+				_TC.startFade(temp);
+			}
+			else
+			{
+				if(temp.idKey == 0 && doorKeys.Count > 0)
+				{
+					_TC.isDoor = true; 
+					temp.doorClosed = false; 
+					temp.doorLocked = false;
+					temp.atualizaSprite();  
+					_TC.startFade(temp);
+				}
+				else
+				{
+					if(doorKeys.Exists(element => element == temp.idKey))
+					{
+						_TC.isDoor = true; 
+						temp.doorClosed = false; 
+						temp.doorLocked = false;
+						temp.atualizaSprite();  
+						_TC.startFade(temp);
+					}
+				}
+			}			
 		}
 	}
 }
