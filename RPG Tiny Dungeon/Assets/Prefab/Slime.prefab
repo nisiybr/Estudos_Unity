@@ -150,7 +150,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   isPlayerLock: 0
-  chavePararMovimento: 0
+  chaveIsLock: 0
   areaPercepcao: 0.8
   pursuitColor: {r: 1, g: 0, b: 0, a: 0.506}
   originalColor: {r: 1, g: 1, b: 1, a: 1}
