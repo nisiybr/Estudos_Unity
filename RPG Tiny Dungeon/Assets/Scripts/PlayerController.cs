@@ -152,7 +152,7 @@ public class PlayerController : MonoBehaviour {
 					doorKeys.Add(col.gameObject.GetComponent<ColectableController>().idKey);
 				}
 				Destroy(col.gameObject);
-			break;
+			break;	
 		}
 	}
 	void testaColisaoRaycast()
@@ -161,8 +161,15 @@ public class PlayerController : MonoBehaviour {
 		if(hit && !_TC.isDoor)
 		{
 			doorController temp = hit.transform.gameObject.GetComponent<doorController>();
-
-			if(!temp.doorLocked)
+			if(temp.doorSpecialEvent)
+			{				
+				if(temp.monsters.Count == 0)
+				{
+					_TC.isDoor = true; 
+					_TC.startFade(temp);
+				}
+			}
+			else if(!temp.doorLocked)
 			{
 				_TC.isDoor = true;
 				temp.doorClosed = false;
