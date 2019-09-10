@@ -57,8 +57,20 @@ public class SlimeController : MonoBehaviour {
 		switch(col.tag)
 		{
 			case "slash":
-				Instantiate(explosaoPrefab,transform.position,transform.localRotation);
-				Destroy(this.gameObject);
+				Instantiate(explosaoPrefab,transform.position,transform.localRotation);	
+				if(this.tag == "keyMonsters")
+				{
+					this.GetComponentInParent<doorController>().retiraDaList(this.gameObject);
+					if(this.GetComponentInParent<doorController>().monsters.Count == 0)
+					{
+						
+						this.GetComponentInParent<doorController>().doorSpecialEvent 	= false; 
+						this.GetComponentInParent<doorController>().doorClosed 			= false; 
+						this.GetComponentInParent<doorController>().doorLocked 			= false;					
+						this.GetComponentInParent<doorController>().atualizaSprite();
+					}
+				}
+				Destroy(this.gameObject);		
 			break;
 		}
 	}

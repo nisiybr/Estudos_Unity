@@ -6,6 +6,7 @@ TagManager:
   tags:
   - slash
   - colectable
+  - keyMonsters
   layers:
   - Default
   - TransparentFX

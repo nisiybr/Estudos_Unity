@@ -766,6 +766,56 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1001 &128652749
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 732086720}
+    m_Modifications:
+    - target: {fileID: 4496182593001216, guid: 5d3d895df09db554d84280d9d76ebc44, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -1.2795998
+      objectReference: {fileID: 0}
+    - target: {fileID: 4496182593001216, guid: 5d3d895df09db554d84280d9d76ebc44, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.9742999
+      objectReference: {fileID: 0}
+    - target: {fileID: 4496182593001216, guid: 5d3d895df09db554d84280d9d76ebc44, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4496182593001216, guid: 5d3d895df09db554d84280d9d76ebc44, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4496182593001216, guid: 5d3d895df09db554d84280d9d76ebc44, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4496182593001216, guid: 5d3d895df09db554d84280d9d76ebc44, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4496182593001216, guid: 5d3d895df09db554d84280d9d76ebc44, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4496182593001216, guid: 5d3d895df09db554d84280d9d76ebc44, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1975610887048710, guid: 5d3d895df09db554d84280d9d76ebc44, type: 2}
+      propertyPath: m_Name
+      value: Slime (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1975610887048710, guid: 5d3d895df09db554d84280d9d76ebc44, type: 2}
+      propertyPath: m_TagString
+      value: keyMonsters
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 5d3d895df09db554d84280d9d76ebc44, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &142615914
 GameObject:
   m_ObjectHideFlags: 0
@@ -966,6 +1016,56 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 1
+--- !u!1001 &158283684
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 732086720}
+    m_Modifications:
+    - target: {fileID: 4496182593001216, guid: 5d3d895df09db554d84280d9d76ebc44, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.83540004
+      objectReference: {fileID: 0}
+    - target: {fileID: 4496182593001216, guid: 5d3d895df09db554d84280d9d76ebc44, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.5743
+      objectReference: {fileID: 0}
+    - target: {fileID: 4496182593001216, guid: 5d3d895df09db554d84280d9d76ebc44, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4496182593001216, guid: 5d3d895df09db554d84280d9d76ebc44, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4496182593001216, guid: 5d3d895df09db554d84280d9d76ebc44, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4496182593001216, guid: 5d3d895df09db554d84280d9d76ebc44, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4496182593001216, guid: 5d3d895df09db554d84280d9d76ebc44, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4496182593001216, guid: 5d3d895df09db554d84280d9d76ebc44, type: 2}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1975610887048710, guid: 5d3d895df09db554d84280d9d76ebc44, type: 2}
+      propertyPath: m_Name
+      value: Slime (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1975610887048710, guid: 5d3d895df09db554d84280d9d76ebc44, type: 2}
+      propertyPath: m_TagString
+      value: keyMonsters
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 5d3d895df09db554d84280d9d76ebc44, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &163816352
 GameObject:
   m_ObjectHideFlags: 0
@@ -1534,12 +1634,15 @@ MonoBehaviour:
   saida: {fileID: 2088676073}
   posicaoCamera: {fileID: 1879737182}
   idSala: 6
+  doorSpecialEvent: 0
   doorClosed: 1
   doorLocked: 1
   idKey: 77
+  portaComGrade: {fileID: 0}
   portaTrancada: {fileID: 21300040, guid: d1195d37fd687854baabe43e21326c9d, type: 3}
   portaFechada: {fileID: 21300032, guid: d1195d37fd687854baabe43e21326c9d, type: 3}
   portaAberta: {fileID: 21300006, guid: d1195d37fd687854baabe43e21326c9d, type: 3}
+  monsters: []
 --- !u!1 &216204751
 GameObject:
   m_ObjectHideFlags: 0
@@ -1802,12 +1905,15 @@ MonoBehaviour:
   saida: {fileID: 832498125}
   posicaoCamera: {fileID: 347765172}
   idSala: 2
+  doorSpecialEvent: 0
   doorClosed: 0
   doorLocked: 0
   idKey: 0
+  portaComGrade: {fileID: 0}
   portaTrancada: {fileID: 21300034, guid: d1195d37fd687854baabe43e21326c9d, type: 3}
   portaFechada: {fileID: 21300026, guid: d1195d37fd687854baabe43e21326c9d, type: 3}
   portaAberta: {fileID: 21300000, guid: d1195d37fd687854baabe43e21326c9d, type: 3}
+  monsters: []
 --- !u!1 &239638125
 GameObject:
   m_ObjectHideFlags: 0
@@ -2053,6 +2159,16 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1 &276094941 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1975610887048710, guid: 5d3d895df09db554d84280d9d76ebc44,
+    type: 2}
+  m_PrefabInternal: {fileID: 128652749}
+--- !u!4 &276094942 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4496182593001216, guid: 5d3d895df09db554d84280d9d76ebc44,
+    type: 2}
+  m_PrefabInternal: {fileID: 128652749}
 --- !u!1 &282863182
 GameObject:
   m_ObjectHideFlags: 0
@@ -2718,12 +2834,15 @@ MonoBehaviour:
   saida: {fileID: 328670775}
   posicaoCamera: {fileID: 1551739124}
   idSala: 3
+  doorSpecialEvent: 0
   doorClosed: 1
   doorLocked: 0
   idKey: 0
+  portaComGrade: {fileID: 0}
   portaTrancada: {fileID: 21300040, guid: d1195d37fd687854baabe43e21326c9d, type: 3}
   portaFechada: {fileID: 21300032, guid: d1195d37fd687854baabe43e21326c9d, type: 3}
   portaAberta: {fileID: 21300006, guid: d1195d37fd687854baabe43e21326c9d, type: 3}
+  monsters: []
 --- !u!1 &417171230
 GameObject:
   m_ObjectHideFlags: 0
@@ -3043,6 +3162,16 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1 &483299735 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1975610887048710, guid: 5d3d895df09db554d84280d9d76ebc44,
+    type: 2}
+  m_PrefabInternal: {fileID: 933171331}
+--- !u!4 &483299736 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4496182593001216, guid: 5d3d895df09db554d84280d9d76ebc44,
+    type: 2}
+  m_PrefabInternal: {fileID: 933171331}
 --- !u!1 &487849119
 GameObject:
   m_ObjectHideFlags: 0
@@ -3257,12 +3386,15 @@ MonoBehaviour:
   saida: {fileID: 1828421240}
   posicaoCamera: {fileID: 1551739124}
   idSala: 3
+  doorSpecialEvent: 0
   doorClosed: 0
   doorLocked: 0
   idKey: 0
+  portaComGrade: {fileID: 0}
   portaTrancada: {fileID: 21300038, guid: d1195d37fd687854baabe43e21326c9d, type: 3}
   portaFechada: {fileID: 21300030, guid: d1195d37fd687854baabe43e21326c9d, type: 3}
   portaAberta: {fileID: 21300004, guid: d1195d37fd687854baabe43e21326c9d, type: 3}
+  monsters: []
 --- !u!1 &515114129
 GameObject:
   m_ObjectHideFlags: 0
@@ -4208,7 +4340,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &651491160
 GameObject:
@@ -4456,6 +4588,52 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1001 &687866459
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 732086720}
+    m_Modifications:
+    - target: {fileID: 4496182593001216, guid: 5d3d895df09db554d84280d9d76ebc44, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.97440046
+      objectReference: {fileID: 0}
+    - target: {fileID: 4496182593001216, guid: 5d3d895df09db554d84280d9d76ebc44, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.8062999
+      objectReference: {fileID: 0}
+    - target: {fileID: 4496182593001216, guid: 5d3d895df09db554d84280d9d76ebc44, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4496182593001216, guid: 5d3d895df09db554d84280d9d76ebc44, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4496182593001216, guid: 5d3d895df09db554d84280d9d76ebc44, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4496182593001216, guid: 5d3d895df09db554d84280d9d76ebc44, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4496182593001216, guid: 5d3d895df09db554d84280d9d76ebc44, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4496182593001216, guid: 5d3d895df09db554d84280d9d76ebc44, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1975610887048710, guid: 5d3d895df09db554d84280d9d76ebc44, type: 2}
+      propertyPath: m_TagString
+      value: keyMonsters
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 5d3d895df09db554d84280d9d76ebc44, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &689725540
 GameObject:
   m_ObjectHideFlags: 0
@@ -4705,12 +4883,15 @@ MonoBehaviour:
   saida: {fileID: 282863183}
   posicaoCamera: {fileID: 748317381}
   idSala: 1
+  doorSpecialEvent: 0
   doorClosed: 0
   doorLocked: 0
   idKey: 0
+  portaComGrade: {fileID: 0}
   portaTrancada: {fileID: 21300034, guid: d1195d37fd687854baabe43e21326c9d, type: 3}
   portaFechada: {fileID: 21300026, guid: d1195d37fd687854baabe43e21326c9d, type: 3}
   portaAberta: {fileID: 21300000, guid: d1195d37fd687854baabe43e21326c9d, type: 3}
+  monsters: []
 --- !u!61 &700059294
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4997,12 +5178,15 @@ MonoBehaviour:
   saida: {fileID: 1942513841}
   posicaoCamera: {fileID: 748317381}
   idSala: 1
+  doorSpecialEvent: 0
   doorClosed: 1
   doorLocked: 1
   idKey: 1
+  portaComGrade: {fileID: 0}
   portaTrancada: {fileID: 21300038, guid: d1195d37fd687854baabe43e21326c9d, type: 3}
   portaFechada: {fileID: 21300030, guid: d1195d37fd687854baabe43e21326c9d, type: 3}
   portaAberta: {fileID: 21300004, guid: d1195d37fd687854baabe43e21326c9d, type: 3}
+  monsters: []
 --- !u!1 &732086719
 GameObject:
   m_ObjectHideFlags: 0
@@ -5032,6 +5216,12 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1692478547}
+  - {fileID: 1158301804}
+  - {fileID: 483299736}
+  - {fileID: 969872723}
+  - {fileID: 276094942}
+  - {fileID: 1604376483}
+  - {fileID: 1994026956}
   m_Father: {fileID: 1081666413}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5093,12 +5283,21 @@ MonoBehaviour:
   saida: {fileID: 1692478547}
   posicaoCamera: {fileID: 347765172}
   idSala: 2
+  doorSpecialEvent: 1
   doorClosed: 1
-  doorLocked: 0
+  doorLocked: 1
   idKey: 0
+  portaComGrade: {fileID: 21300024, guid: d1195d37fd687854baabe43e21326c9d, type: 3}
   portaTrancada: {fileID: 21300040, guid: d1195d37fd687854baabe43e21326c9d, type: 3}
   portaFechada: {fileID: 21300032, guid: d1195d37fd687854baabe43e21326c9d, type: 3}
   portaAberta: {fileID: 21300006, guid: d1195d37fd687854baabe43e21326c9d, type: 3}
+  monsters:
+  - {fileID: 483299735}
+  - {fileID: 969872722}
+  - {fileID: 276094941}
+  - {fileID: 1604376482}
+  - {fileID: 1994026955}
+  - {fileID: 1158301803}
 --- !u!61 &732086723
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5150,6 +5349,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 192257243}
+  - {fileID: 1932299712}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6302,6 +6502,56 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1001 &933171331
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 732086720}
+    m_Modifications:
+    - target: {fileID: 4496182593001216, guid: 5d3d895df09db554d84280d9d76ebc44, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.26640028
+      objectReference: {fileID: 0}
+    - target: {fileID: 4496182593001216, guid: 5d3d895df09db554d84280d9d76ebc44, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.7633
+      objectReference: {fileID: 0}
+    - target: {fileID: 4496182593001216, guid: 5d3d895df09db554d84280d9d76ebc44, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4496182593001216, guid: 5d3d895df09db554d84280d9d76ebc44, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4496182593001216, guid: 5d3d895df09db554d84280d9d76ebc44, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4496182593001216, guid: 5d3d895df09db554d84280d9d76ebc44, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4496182593001216, guid: 5d3d895df09db554d84280d9d76ebc44, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4496182593001216, guid: 5d3d895df09db554d84280d9d76ebc44, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1975610887048710, guid: 5d3d895df09db554d84280d9d76ebc44, type: 2}
+      propertyPath: m_Name
+      value: Slime (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1975610887048710, guid: 5d3d895df09db554d84280d9d76ebc44, type: 2}
+      propertyPath: m_TagString
+      value: keyMonsters
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 5d3d895df09db554d84280d9d76ebc44, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &943129823
 GameObject:
   m_ObjectHideFlags: 0
@@ -6417,12 +6667,15 @@ MonoBehaviour:
   saida: {fileID: 27322233}
   posicaoCamera: {fileID: 1551739124}
   idSala: 3
+  doorSpecialEvent: 0
   doorClosed: 0
   doorLocked: 0
   idKey: 0
+  portaComGrade: {fileID: 0}
   portaTrancada: {fileID: 21300036, guid: d1195d37fd687854baabe43e21326c9d, type: 3}
   portaFechada: {fileID: 21300028, guid: d1195d37fd687854baabe43e21326c9d, type: 3}
   portaAberta: {fileID: 21300002, guid: d1195d37fd687854baabe43e21326c9d, type: 3}
+  monsters: []
 --- !u!1 &957807895
 GameObject:
   m_ObjectHideFlags: 0
@@ -6531,6 +6784,16 @@ Transform:
   m_Father: {fileID: 927254647}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &969872722 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1975610887048710, guid: 5d3d895df09db554d84280d9d76ebc44,
+    type: 2}
+  m_PrefabInternal: {fileID: 1195236823}
+--- !u!4 &969872723 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4496182593001216, guid: 5d3d895df09db554d84280d9d76ebc44,
+    type: 2}
+  m_PrefabInternal: {fileID: 1195236823}
 --- !u!1 &971026282
 GameObject:
   m_ObjectHideFlags: 0
@@ -7630,6 +7893,16 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1 &1158301803 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1975610887048710, guid: 5d3d895df09db554d84280d9d76ebc44,
+    type: 2}
+  m_PrefabInternal: {fileID: 687866459}
+--- !u!4 &1158301804 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4496182593001216, guid: 5d3d895df09db554d84280d9d76ebc44,
+    type: 2}
+  m_PrefabInternal: {fileID: 687866459}
 --- !u!1 &1171320186
 GameObject:
   m_ObjectHideFlags: 0
@@ -7759,7 +8032,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1178431176
 GameObject:
@@ -7862,6 +8135,56 @@ Transform:
   m_Father: {fileID: 1790074659}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1195236823
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 732086720}
+    m_Modifications:
+    - target: {fileID: 4496182593001216, guid: 5d3d895df09db554d84280d9d76ebc44, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -0.4415999
+      objectReference: {fileID: 0}
+    - target: {fileID: 4496182593001216, guid: 5d3d895df09db554d84280d9d76ebc44, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.9902999
+      objectReference: {fileID: 0}
+    - target: {fileID: 4496182593001216, guid: 5d3d895df09db554d84280d9d76ebc44, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4496182593001216, guid: 5d3d895df09db554d84280d9d76ebc44, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4496182593001216, guid: 5d3d895df09db554d84280d9d76ebc44, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4496182593001216, guid: 5d3d895df09db554d84280d9d76ebc44, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4496182593001216, guid: 5d3d895df09db554d84280d9d76ebc44, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4496182593001216, guid: 5d3d895df09db554d84280d9d76ebc44, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1975610887048710, guid: 5d3d895df09db554d84280d9d76ebc44, type: 2}
+      propertyPath: m_Name
+      value: Slime (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1975610887048710, guid: 5d3d895df09db554d84280d9d76ebc44, type: 2}
+      propertyPath: m_TagString
+      value: keyMonsters
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 5d3d895df09db554d84280d9d76ebc44, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1211175522
 GameObject:
   m_ObjectHideFlags: 0
@@ -9306,12 +9629,15 @@ MonoBehaviour:
   saida: {fileID: 142615915}
   posicaoCamera: {fileID: 518745879}
   idSala: 5
+  doorSpecialEvent: 0
   doorClosed: 1
   doorLocked: 1
   idKey: 2
+  portaComGrade: {fileID: 0}
   portaTrancada: {fileID: 21300038, guid: d1195d37fd687854baabe43e21326c9d, type: 3}
   portaFechada: {fileID: 21300030, guid: d1195d37fd687854baabe43e21326c9d, type: 3}
   portaAberta: {fileID: 21300004, guid: d1195d37fd687854baabe43e21326c9d, type: 3}
+  monsters: []
 --- !u!1 &1395179835
 GameObject:
   m_ObjectHideFlags: 0
@@ -9968,6 +10294,56 @@ Transform:
   m_Father: {fileID: 99633642}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1495852350
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 732086720}
+    m_Modifications:
+    - target: {fileID: 4496182593001216, guid: 5d3d895df09db554d84280d9d76ebc44, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 1.5004
+      objectReference: {fileID: 0}
+    - target: {fileID: 4496182593001216, guid: 5d3d895df09db554d84280d9d76ebc44, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.90929997
+      objectReference: {fileID: 0}
+    - target: {fileID: 4496182593001216, guid: 5d3d895df09db554d84280d9d76ebc44, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4496182593001216, guid: 5d3d895df09db554d84280d9d76ebc44, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4496182593001216, guid: 5d3d895df09db554d84280d9d76ebc44, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4496182593001216, guid: 5d3d895df09db554d84280d9d76ebc44, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4496182593001216, guid: 5d3d895df09db554d84280d9d76ebc44, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4496182593001216, guid: 5d3d895df09db554d84280d9d76ebc44, type: 2}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1975610887048710, guid: 5d3d895df09db554d84280d9d76ebc44, type: 2}
+      propertyPath: m_Name
+      value: Slime (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1975610887048710, guid: 5d3d895df09db554d84280d9d76ebc44, type: 2}
+      propertyPath: m_TagString
+      value: keyMonsters
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 5d3d895df09db554d84280d9d76ebc44, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1507752485
 GameObject:
   m_ObjectHideFlags: 0
@@ -11036,6 +11412,16 @@ Transform:
   m_Father: {fileID: 1634398272}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1604376482 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1975610887048710, guid: 5d3d895df09db554d84280d9d76ebc44,
+    type: 2}
+  m_PrefabInternal: {fileID: 1495852350}
+--- !u!4 &1604376483 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4496182593001216, guid: 5d3d895df09db554d84280d9d76ebc44,
+    type: 2}
+  m_PrefabInternal: {fileID: 1495852350}
 --- !u!1 &1607106646
 GameObject:
   m_ObjectHideFlags: 0
@@ -12592,12 +12978,15 @@ MonoBehaviour:
   saida: {fileID: 1194769930}
   posicaoCamera: {fileID: 1566785846}
   idSala: 4
+  doorSpecialEvent: 0
   doorClosed: 1
   doorLocked: 1
   idKey: 66
+  portaComGrade: {fileID: 0}
   portaTrancada: {fileID: 21300036, guid: d1195d37fd687854baabe43e21326c9d, type: 3}
   portaFechada: {fileID: 21300028, guid: d1195d37fd687854baabe43e21326c9d, type: 3}
   portaAberta: {fileID: 21300002, guid: d1195d37fd687854baabe43e21326c9d, type: 3}
+  monsters: []
 --- !u!1 &1796784969
 GameObject:
   m_ObjectHideFlags: 0
@@ -13358,12 +13747,12 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1932299707}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.86, y: -0.86, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.61559963, y: -0.86, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_Father: {fileID: 748317381}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1937097666
 GameObject:
@@ -13909,6 +14298,16 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 1
+--- !u!1 &1994026955 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1975610887048710, guid: 5d3d895df09db554d84280d9d76ebc44,
+    type: 2}
+  m_PrefabInternal: {fileID: 158283684}
+--- !u!4 &1994026956 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4496182593001216, guid: 5d3d895df09db554d84280d9d76ebc44,
+    type: 2}
+  m_PrefabInternal: {fileID: 158283684}
 --- !u!1 &1995027337
 GameObject:
   m_ObjectHideFlags: 0
@@ -14376,12 +14775,15 @@ MonoBehaviour:
   saida: {fileID: 1013247260}
   posicaoCamera: {fileID: 1551739124}
   idSala: 3
+  doorSpecialEvent: 0
   doorClosed: 0
   doorLocked: 0
   idKey: 0
+  portaComGrade: {fileID: 0}
   portaTrancada: {fileID: 21300034, guid: d1195d37fd687854baabe43e21326c9d, type: 3}
   portaFechada: {fileID: 21300026, guid: d1195d37fd687854baabe43e21326c9d, type: 3}
   portaAberta: {fileID: 21300000, guid: d1195d37fd687854baabe43e21326c9d, type: 3}
+  monsters: []
 --- !u!1 &2051846876
 GameObject:
   m_ObjectHideFlags: 0
@@ -14979,9 +15381,12 @@ MonoBehaviour:
   saida: {fileID: 1034448892}
   posicaoCamera: {fileID: 2042722134}
   idSala: 0
+  doorSpecialEvent: 0
   doorClosed: 0
   doorLocked: 0
   idKey: 0
+  portaComGrade: {fileID: 0}
   portaTrancada: {fileID: 21300036, guid: d1195d37fd687854baabe43e21326c9d, type: 3}
   portaFechada: {fileID: 21300028, guid: d1195d37fd687854baabe43e21326c9d, type: 3}
   portaAberta: {fileID: 21300002, guid: d1195d37fd687854baabe43e21326c9d, type: 3}
+  monsters: []
