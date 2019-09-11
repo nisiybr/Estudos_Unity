@@ -8,7 +8,7 @@ public class SlimeController : MonoBehaviour {
 	public GameObject explosaoPrefab;
 
 	private Rigidbody2D slimeRb;
-	private Vector2 direcaoMovimento;
+	public Vector2 direcaoMovimento;
 	public float velocidadeMovimento;
 	public float tempoMinMovimento;
 	public float tempoMinEspera;
@@ -47,6 +47,7 @@ public class SlimeController : MonoBehaviour {
 			if(chaveIsLock)
 			{
 				direcaoMovimento = new Vector2(0,0);
+				StartCoroutine("moverSlime");
 				spriteRenderer.color = originalColor;
 				chaveIsLock = false;
 			}
@@ -78,15 +79,19 @@ public class SlimeController : MonoBehaviour {
 
 	IEnumerator moverSlime()
 	{
+
 		direcaoMovimento = new Vector2(0,0);
 		yield return new WaitForSeconds(Random.Range(tempoMinEspera,tempoMaxEspera));
 
 		if(!isPlayerLock)
 		{
+			
 			int x = Random.Range(-1,2);//sorteia -1, 0 , 2 
 			int y = Random.Range(-1,2);//sorteia -1, 0 , 2 
 			direcaoMovimento = new Vector2 (x,y);
+
 			yield return new WaitForSeconds(Random.Range(tempoMinMovimento,tempoMaxMovimento));
+
 		}
 		StartCoroutine("moverSlime");
 	}
