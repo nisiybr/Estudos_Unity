@@ -54,8 +54,11 @@
      <Compile Include="Assets\Scripts\ColectableController.cs" />
      <Compile Include="Assets\Scripts\doorController.cs" />
      <Compile Include="Assets\Scripts\ExplosaoController.cs" />
+     <Compile Include="Assets\Scripts\FonteLuz.cs" />
+     <Compile Include="Assets\Scripts\Item.cs" />
      <Compile Include="Assets\Scripts\miniMapaController.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\ShadowController.cs" />
      <Compile Include="Assets\Scripts\SlimeController.cs" />
      <Compile Include="Assets\Scripts\transitionController.cs" />
  <Reference Include="UnityEngine.CoreModule">
