@@ -13,9 +13,12 @@ public class transitionController : MonoBehaviour {
 
 	public Animator animator;
 
+	private ShadowController _SC;
+
 	void Start() {
 		_PC = FindObjectOfType(typeof(PlayerController))	 as PlayerController;
 		_MM = FindObjectOfType(typeof(miniMapaController)) as miniMapaController;
+		_SC = _PC.GetComponent<ShadowController>();
 		mainCamera = Camera.main.transform;
 	}
 	public void startFade(doorController portaS) //passa como parâmetro o script da porta
@@ -28,7 +31,9 @@ public class transitionController : MonoBehaviour {
 		_PC.transform.position = door.saida.position;
 		mainCamera.position = new Vector3(door.posicaoCamera.position.x,door.posicaoCamera.position.y,-10);
 		_MM.updateMiniMapa(door.idSala);
+		_SC.updateLightList();
 		isDoor = false;
 		animator.SetTrigger("FadeIn");
+
 	}
 }
